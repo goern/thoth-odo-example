@@ -3,10 +3,10 @@ metadata:
   name: python-thoth
   version: 0.1.0
 starterProjects:
-  - name: thoth-cli-examples
+  - name: thoth-odo-example
     git:
       remotes:
-        origin: https://github.com/goern/thoth-odo-examples
+        origin: https://github.com/goern/thoth-odo-example
 components:
   - name: app
     container:
