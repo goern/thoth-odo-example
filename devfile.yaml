@@ -12,6 +12,9 @@ components:
     container:
       image: quay.io/thoth-station/s2i-thoth-ubi8-py36:latest
       mountSources: true
+      endpoints:
+        - name: '8080-http'
+          targetPort: 8080
 commands:
   - id: install-dependencies
     exec:
