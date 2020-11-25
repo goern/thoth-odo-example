@@ -10,7 +10,7 @@ starterProjects:
 components:
   - name: app
     container:
-      image: quay.io/thoth-station/s2i-thoth-ubi8-py38:latest
+      image: quay.io/thoth-station/s2i-thoth-ubi8-py36:latest
       mountSources: true
 commands:
   - id: install-dependencies

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """A simple application to demo Thoth's software stack recommendations."""
 
-import sys
 import tensorflow as tf
 
 from flask import Flask
@@ -25,6 +24,7 @@ def terminal_hello_v2():
 
 @app.route("/v2")
 def flask_hello_v2():
+    """Print hello world from within a TensorFlow session."""
     return "Hello Thoth, your friend TensorFlow v2!"
 
 
@@ -36,4 +36,3 @@ if __name__ == "__main__":
         terminal_hello_v1()
 
     app.run(port=8080, host="0.0.0.0")
-
