@@ -8,13 +8,13 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi-org"
 
+[packages]
+flask = "*"
+
 [dev-packages]
 
 [requires]
-python_version = "3.8"
-
-[packages]
-Flask = "*"
+python_version = "3.6"
 
 [packages.tensorflow]
 index = "tensorflow-pypi-thoth-station-ninja"
