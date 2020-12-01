@@ -25,7 +25,11 @@ def terminal_hello_v2():
 @app.route("/v2")
 def flask_hello_v2():
     """Print hello world from within a TensorFlow session."""
-    return "Hello Thoth, your friend TensorFlow v2!"
+    tf_version = tf.__version__
+    if int(tf_version[0] == 2):
+        return "Hello Thoth, your friend TensorFlow v2!"
+    else:
+        return "Uh oh! I am not using TensorFlow v2..."
 
 
 if __name__ == "__main__":

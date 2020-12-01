@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .thoth_last_analysis_id
+.thoth_last_analysis_id
